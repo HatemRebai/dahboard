@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="dash.js"></script>
+    <title>Dashboard</title>
+</head>
+<style>
+    html {
+        background-color: #444;
+
+    }
+
+    body {
+        background-color: #FFF;
+        font-family: 'Lato', sans-serif;
+        height: 52.625em;
+    }
+
+    #section-left {
+        width: 25%;
+        float: left;
+        height: 100%;
+        background-color: blue;
+        color: fuchsia;
+        text-align: center;
+
+    }
+
+    #section-right {
+        width: 75%;
+        float: right;
+        background-color: rgb(224, 222, 222);
+        height: 100%
+            /*height: 100%;*/
+
+    }
+
+    .wrapper {
+        padding: 2em;
+    }
+
+    .btn {
+        border-radius: 0.5rem;
+        width: 200px;
+        font-size: 1.5em;
+        background-color: white;
+        color: #563d7c;
+        border: 1px solid#787c3d;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+        margin-right: 1rem;
+    }
+
+    .btn:hover {
+        color: white;
+        background-color: #527780;
+
+    }
+
+    .section-intro {
+        margin-top: 200px;
+    }
+
+    #task {
+        display: none;
+        /*ya3ni matodhhorch*/
+        margin-top: 150px;
+    }
+
+    #message {
+        display: block;
+        margin-top: 150px;
+    }
+
+    #add2 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+        margin-right: 1rem;
+
+    }
+
+    #out {
+        border-radius: 0.5rem;
+        width: 200px;
+        font-size: 1.5em;
+        background-color: white;
+        color: #563d7c;
+        border: 1px solid#787c3d;
+        float: right;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+        margin-right: 1rem;
+    }
+</style>
+
+<body onload="Add()">
+
+    <div id="section-left">
+        <div class="section-intro">
+            <input class="btn" id="ajout" type="button" onclick="Add()" value="Add"><br>
+            <input class="btn" type="button" onclick="Show()" value="Show">
+        </div>
+    </div>
+
+    <div id="section-right">
+        <input type="button" onclick="logout()" value="Logout" id="out">
+        <div class="wrapper">
+
+            <form id="task">
+                Task: <input id="sk" type="text" name="task" size="30px">
+
+                <br>
+                Temps: <input id="tmp" type="date" name="temps" size="30px"><br>
+                <input id="add2" type="button" onclick="Add2()" value="Add" size="20px">
+            </form>
+            <div id="message">
+
+            </div>
+            <form id="update">
+                Task: <input id="skE" type="text" name="task" size="30px">
+
+                <br>
+                Temps: <input id="tmpE" type="date" name="temps" size="30px"><br>
+                <input id="index" type="text" name="temps" hidden>
+                <input id="add2" type="button" onclick="modify()" value="edit" size="20px">
+            </form>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

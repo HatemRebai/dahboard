@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="main.js"></script>
+</head>
+<body >
+        <h2>Formulaire</h2>
+    First name:<br>
+    <input placeholder="firstname" onblur="test()" type="text" id="firstname" > 
+    <br>
+    Last name:<br>
+    <input placeholder="lastname" type="text" id="lastname" >
+    <br><br>
+
+    Email:<br>
+    <input onblur="validateEmail()"  type="email" id="email" >
+
+    <br>Password:<br>
+
+    <input onblur="tous()" type="password" id="Password"  placeholder="Password" >
+    <br>
+    Numero telephone:<br>
+    <input onblur="validatephone()" type="text" id="Phonenumber" >
+    <br> <br>
+    <input  type="date" id="date" onblur="currendate()" placeholder="Date" >
+    <br>
+    <br>
+
+    <input onclick="register()" type="submit" value="Submit">  
+</body>
+</html>
